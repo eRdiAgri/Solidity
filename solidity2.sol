@@ -20,7 +20,7 @@ contract Mapping {
 
 
     function deleteRegistered() public {
-        require(Registered(), "user is not registered.");
+        require(Registered(), "Tuser is not registered.");
         delete(_registered[msg.sender]);
         delete(_amount[msg.sender]);
     }
